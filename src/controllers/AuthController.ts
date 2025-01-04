@@ -1,6 +1,6 @@
 import type { Request, Response } from "express"
 import User from '../models/User'
-import hashPassword from '../utils/auth'
+import { hashPassword } from '../utils/auth'
 
 export class AuthController {
 
