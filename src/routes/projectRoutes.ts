@@ -105,6 +105,10 @@ router.post('/:projectId/team/find',
   TeamMembercontroller.findMemberByEmail
 )
 
+router.get('/:projectId/team',
+  TeamMembercontroller.getProjectTeam
+)
+
 router.post('/:projectId/team',
   body('id')
     .isMongoId().withMessage('Id no válida'),
